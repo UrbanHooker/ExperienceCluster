@@ -57,7 +57,7 @@
 /**
  *  Button action
  *
- *  @param button button
+ *  @param button
  */
 - (void)pushToStoryboard:(UIButton *)button {
     if (button.tag == 0) {

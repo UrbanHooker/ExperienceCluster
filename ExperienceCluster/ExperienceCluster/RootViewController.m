@@ -29,6 +29,7 @@ static NSString * const cellID = @"reusedCellID";
 }
 - (void)cellList {
     [self addCell:@"BuildInterface" class:@"BuildInterfaceController"];
+    [self addCell:@"PassValue" class:@"PassValueController"];
 }
 
 #pragma mark - Table view data source

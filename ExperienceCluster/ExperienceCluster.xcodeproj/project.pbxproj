@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072BE1DEECFDA007A8C74 /* PassValueController.m */; };
+		B04072C21DEED88B007A8C74 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C11DEED88B007A8C74 /* UILabel+Category.m */; };
+		B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C41DEEDA07007A8C74 /* UIButton+Category.m */; };
 		B0D266C71DEE837600C16964 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C61DEE837600C16964 /* main.m */; };
 		B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C91DEE837600C16964 /* AppDelegate.m */; };
 		B0D266D01DEE837600C16964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D266CE1DEE837600C16964 /* Main.storyboard */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B04072BD1DEECFDA007A8C74 /* PassValueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassValueController.h; path = Cluster/PassValueController.h; sourceTree = "<group>"; };
+		B04072BE1DEECFDA007A8C74 /* PassValueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassValueController.m; path = Cluster/PassValueController.m; sourceTree = "<group>"; };
+		B04072C01DEED88B007A8C74 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Category.h"; path = "Category/UILabel+Category.h"; sourceTree = "<group>"; };
+		B04072C11DEED88B007A8C74 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Category.m"; path = "Category/UILabel+Category.m"; sourceTree = "<group>"; };
+		B04072C31DEEDA07007A8C74 /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Category.h"; path = "Category/UIButton+Category.h"; sourceTree = "<group>"; };
+		B04072C41DEEDA07007A8C74 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Category.m"; path = "Category/UIButton+Category.m"; sourceTree = "<group>"; };
 		B0D266C21DEE837600C16964 /* ExperienceCluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExperienceCluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D266C61DEE837600C16964 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0D266C81DEE837600C16964 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +82,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B04072BC1DEECFB9007A8C74 /* PassValue */ = {
+			isa = PBXGroup;
+			children = (
+				B04072BD1DEECFDA007A8C74 /* PassValueController.h */,
+				B04072BE1DEECFDA007A8C74 /* PassValueController.m */,
+			);
+			name = PassValue;
+			sourceTree = "<group>";
+		};
 		B0D266B91DEE837600C16964 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +140,7 @@
 				B0D266E61DEE962200C16964 /* BaseViewController.h */,
 				B0D266E71DEE962200C16964 /* BaseViewController.m */,
 				B0D266E11DEE87BB00C16964 /* BuildInterface */,
+				B04072BC1DEECFB9007A8C74 /* PassValue */,
 			);
 			name = Cluster;
 			sourceTree = "<group>";
@@ -151,6 +170,10 @@
 			children = (
 				B0D266E91DEEA9B500C16964 /* UIView+Dot.h */,
 				B0D266EA1DEEA9B500C16964 /* UIView+Dot.m */,
+				B04072C01DEED88B007A8C74 /* UILabel+Category.h */,
+				B04072C11DEED88B007A8C74 /* UILabel+Category.m */,
+				B04072C31DEEDA07007A8C74 /* UIButton+Category.h */,
+				B04072C41DEEDA07007A8C74 /* UIButton+Category.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -280,9 +303,12 @@
 				B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */,
 				B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */,
 				B0D266EB1DEEA9B500C16964 /* UIView+Dot.m in Sources */,
+				B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */,
 				B0D266DE1DEE865E00C16964 /* RootViewController.m in Sources */,
+				B04072C21DEED88B007A8C74 /* UILabel+Category.m in Sources */,
 				B0D266E51DEE87F600C16964 /* BuildInterfaceController.m in Sources */,
 				B0D266C71DEE837600C16964 /* main.m in Sources */,
+				B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
