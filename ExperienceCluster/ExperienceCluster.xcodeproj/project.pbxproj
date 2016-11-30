@@ -10,6 +10,7 @@
 		B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072BE1DEECFDA007A8C74 /* PassValueController.m */; };
 		B04072C21DEED88B007A8C74 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C11DEED88B007A8C74 /* UILabel+Category.m */; };
 		B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C41DEEDA07007A8C74 /* UIButton+Category.m */; };
+		B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C81DEEFB77007A8C74 /* ReferenceCountController.m */; };
 		B0D266C71DEE837600C16964 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C61DEE837600C16964 /* main.m */; };
 		B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C91DEE837600C16964 /* AppDelegate.m */; };
 		B0D266D01DEE837600C16964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D266CE1DEE837600C16964 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 		B04072C11DEED88B007A8C74 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Category.m"; path = "Category/UILabel+Category.m"; sourceTree = "<group>"; };
 		B04072C31DEEDA07007A8C74 /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Category.h"; path = "Category/UIButton+Category.h"; sourceTree = "<group>"; };
 		B04072C41DEEDA07007A8C74 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Category.m"; path = "Category/UIButton+Category.m"; sourceTree = "<group>"; };
+		B04072C71DEEFB77007A8C74 /* ReferenceCountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReferenceCountController.h; path = Cluster/ReferenceCountController.h; sourceTree = "<group>"; };
+		B04072C81DEEFB77007A8C74 /* ReferenceCountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReferenceCountController.m; path = Cluster/ReferenceCountController.m; sourceTree = "<group>"; };
 		B0D266C21DEE837600C16964 /* ExperienceCluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExperienceCluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D266C61DEE837600C16964 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0D266C81DEE837600C16964 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +94,15 @@
 			name = PassValue;
 			sourceTree = "<group>";
 		};
+		B04072C61DEEFB47007A8C74 /* RefrenceCount */ = {
+			isa = PBXGroup;
+			children = (
+				B04072C71DEEFB77007A8C74 /* ReferenceCountController.h */,
+				B04072C81DEEFB77007A8C74 /* ReferenceCountController.m */,
+			);
+			name = RefrenceCount;
+			sourceTree = "<group>";
+		};
 		B0D266B91DEE837600C16964 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 				B0D266E71DEE962200C16964 /* BaseViewController.m */,
 				B0D266E11DEE87BB00C16964 /* BuildInterface */,
 				B04072BC1DEECFB9007A8C74 /* PassValue */,
+				B04072C61DEEFB47007A8C74 /* RefrenceCount */,
 			);
 			name = Cluster;
 			sourceTree = "<group>";
@@ -303,6 +316,7 @@
 				B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */,
 				B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */,
 				B0D266EB1DEEA9B500C16964 /* UIView+Dot.m in Sources */,
+				B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */,
 				B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */,
 				B0D266DE1DEE865E00C16964 /* RootViewController.m in Sources */,
 				B04072C21DEED88B007A8C74 /* UILabel+Category.m in Sources */,

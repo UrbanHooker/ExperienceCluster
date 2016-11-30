@@ -10,4 +10,5 @@
 
 @interface UILabel (Category)
 + (UILabel *)makeLabel;
++ (UILabel *)makeLabelWithContent:(NSString *)content;
 @end

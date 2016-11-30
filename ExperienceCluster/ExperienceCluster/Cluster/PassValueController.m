@@ -61,12 +61,12 @@ static NSString * const passValueNotification = @"passValue";
         } break;
         case 1: {
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_block_t block = ^void() {
                 if (anotherController.addLabel) {
                     anotherController.addLabel(_label);
                 }
-            });
-            
+            };
+            [self passValueDispatch:block];
             [self.navigationController pushViewController:anotherController animated:YES];
             
         } break;
@@ -75,19 +75,21 @@ static NSString * const passValueNotification = @"passValue";
             self.delegate = anotherController;
             if ([self.delegate respondsToSelector:@selector(valueNeedToPass:)]) {
                 
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                dispatch_block_t block = ^void() {
                     [self.delegate valueNeedToPass:_label];
-                });
+                };
+                [self passValueDispatch:block];
             }
             [self.navigationController pushViewController:anotherController animated:YES];
             
         } break;
         case 3: {
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_block_t block = ^void() {
                 NSDictionary *dic = [NSDictionary dictionaryWithObject:_label forKey:@"label"];
                 [[NSNotificationCenter defaultCenter] postNotificationName:passValueNotification object:nil userInfo:dic];
-            });
+            };
+            [self passValueDispatch:block];
             [self.navigationController pushViewController:anotherController animated:YES];
             
         } break;
@@ -96,14 +98,15 @@ static NSString * const passValueNotification = @"passValue";
     }
 }
 
+- (void)passValueDispatch:(dispatch_block_t)block {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5*NSEC_PER_SEC)), dispatch_get_main_queue(), block);
+}
 
 @end
 
 
 @interface AnotherController ()
-
 @end
-
 @implementation AnotherController
 
 - (instancetype)init {

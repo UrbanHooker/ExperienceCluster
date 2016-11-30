@@ -11,14 +11,17 @@
 @implementation UILabel (Category)
 
 + (UILabel *)makeLabel {
+    return [self makeLabelWithContent:@"I'm Label."];
+}
+
++ (UILabel *)makeLabelWithContent:(NSString *)content {
     UILabel *_labelMadeByCode       = [UILabel new];
-    NSAttributedString *attr        = [[NSAttributedString alloc] initWithString:@"I'm Label." attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20], NSForegroundColorAttributeName:[UIColor darkGrayColor]}];
+    NSAttributedString *attr        = [[NSAttributedString alloc] initWithString:content attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20], NSForegroundColorAttributeName:[UIColor darkGrayColor]}];
     _labelMadeByCode.attributedText = attr;
     _labelMadeByCode.numberOfLines  = 0;
     _labelMadeByCode.size           = CGSizeMake(200, 1000);
     [_labelMadeByCode sizeToFit];
     return _labelMadeByCode;
 }
-
 
 @end
