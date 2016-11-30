@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BuildInterfaceController.h
 //  ExperienceCluster
 //
 //  Created by Roy Miller on 16/11/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BuildInterfaceController : UIViewController
 
 @end
-
