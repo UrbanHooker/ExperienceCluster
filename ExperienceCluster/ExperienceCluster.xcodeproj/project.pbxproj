@@ -14,6 +14,7 @@
 		B0D266D51DEE837600C16964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D266D31DEE837600C16964 /* LaunchScreen.storyboard */; };
 		B0D266DE1DEE865E00C16964 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266DD1DEE865E00C16964 /* RootViewController.m */; };
 		B0D266E51DEE87F600C16964 /* BuildInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266E41DEE87F600C16964 /* BuildInterfaceController.m */; };
+		B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266E71DEE962200C16964 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		B0D266DD1DEE865E00C16964 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		B0D266E31DEE87F600C16964 /* BuildInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuildInterfaceController.h; path = Cluster/BuildInterfaceController.h; sourceTree = "<group>"; };
 		B0D266E41DEE87F600C16964 /* BuildInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuildInterfaceController.m; path = Cluster/BuildInterfaceController.m; sourceTree = "<group>"; };
+		B0D266E61DEE962200C16964 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Cluster/BaseViewController.h; sourceTree = "<group>"; };
+		B0D266E71DEE962200C16964 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Cluster/BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		B0D266DF1DEE86EA00C16964 /* Cluster */ = {
 			isa = PBXGroup;
 			children = (
+				B0D266E61DEE962200C16964 /* BaseViewController.h */,
+				B0D266E71DEE962200C16964 /* BaseViewController.m */,
 				B0D266E11DEE87BB00C16964 /* BuildInterface */,
 			);
 			name = Cluster;
@@ -187,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */,
+				B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */,
 				B0D266DE1DEE865E00C16964 /* RootViewController.m in Sources */,
 				B0D266E51DEE87F600C16964 /* BuildInterfaceController.m in Sources */,
 				B0D266C71DEE837600C16964 /* main.m in Sources */,

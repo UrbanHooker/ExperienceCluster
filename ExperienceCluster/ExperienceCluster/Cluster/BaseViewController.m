@@ -1,28 +1,26 @@
 //
-//  BuildInterfaceController.m
+//  BaseViewController.m
 //  ExperienceCluster
 //
 //  Created by Roy Miller on 16/11/30.
 //  Copyright © 2016年 Roy Miller. All rights reserved.
 //
 
-#import "BuildInterfaceController.h"
+#import "BaseViewController.h"
 
-@interface BuildInterfaceController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation BuildInterfaceController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
 
 @end
