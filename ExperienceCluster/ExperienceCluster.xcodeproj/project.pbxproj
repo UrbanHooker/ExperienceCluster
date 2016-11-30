@@ -16,6 +16,7 @@
 		B0D266E51DEE87F600C16964 /* BuildInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266E41DEE87F600C16964 /* BuildInterfaceController.m */; };
 		B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266E71DEE962200C16964 /* BaseViewController.m */; };
 		B0D266EB1DEEA9B500C16964 /* UIView+Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266EA1DEEA9B500C16964 /* UIView+Dot.m */; };
+		B0D266F11DEEBEDC00C16964 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D266F01DEEBEDC00C16964 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B0D266E91DEEA9B500C16964 /* UIView+Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Dot.h"; path = "Category/UIView+Dot.h"; sourceTree = "<group>"; };
 		B0D266EA1DEEA9B500C16964 /* UIView+Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Dot.m"; path = "Category/UIView+Dot.m"; sourceTree = "<group>"; };
 		B0D266EC1DEEADB800C16964 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B0D266F01DEEBEDC00C16964 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = Xibs/View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B0D266D11DEE837600C16964 /* Assets.xcassets */,
 				B0D266CE1DEE837600C16964 /* Main.storyboard */,
 				B0D266D31DEE837600C16964 /* LaunchScreen.storyboard */,
+				B0D266F01DEEBEDC00C16964 /* View.xib */,
 			);
 			name = Media;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0D266F11DEEBEDC00C16964 /* View.xib in Resources */,
 				B0D266D51DEE837600C16964 /* LaunchScreen.storyboard in Resources */,
 				B0D266D21DEE837600C16964 /* Assets.xcassets in Resources */,
 				B0D266D01DEE837600C16964 /* Main.storyboard in Resources */,
