@@ -12,6 +12,7 @@
 		B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C41DEEDA07007A8C74 /* UIButton+Category.m */; };
 		B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C81DEEFB77007A8C74 /* ReferenceCountController.m */; };
 		B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072CC1DEF07A5007A8C74 /* DebugSkillController.m */; };
+		B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D41DEF168E007A8C74 /* WriteBlockController.m */; };
 		B0D266C71DEE837600C16964 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C61DEE837600C16964 /* main.m */; };
 		B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C91DEE837600C16964 /* AppDelegate.m */; };
 		B0D266D01DEE837600C16964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D266CE1DEE837600C16964 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 		B04072CC1DEF07A5007A8C74 /* DebugSkillController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DebugSkillController.m; path = Cluster/DebugSkillController.m; sourceTree = "<group>"; };
 		B04072D01DEF084A007A8C74 /* ConvientDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConvientDefine.h; path = Defines/ConvientDefine.h; sourceTree = "<group>"; };
 		B04072D11DEF0944007A8C74 /* LogDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LogDefine.h; path = Defines/LogDefine.h; sourceTree = "<group>"; };
+		B04072D31DEF168E007A8C74 /* WriteBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteBlockController.h; path = Cluster/WriteBlockController.h; sourceTree = "<group>"; };
+		B04072D41DEF168E007A8C74 /* WriteBlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WriteBlockController.m; path = Cluster/WriteBlockController.m; sourceTree = "<group>"; };
 		B0D266C21DEE837600C16964 /* ExperienceCluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExperienceCluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D266C61DEE837600C16964 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0D266C81DEE837600C16964 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,15 @@
 			name = Define;
 			sourceTree = "<group>";
 		};
+		B04072D21DEF1669007A8C74 /* WriteBlock */ = {
+			isa = PBXGroup;
+			children = (
+				B04072D31DEF168E007A8C74 /* WriteBlockController.h */,
+				B04072D41DEF168E007A8C74 /* WriteBlockController.m */,
+			);
+			name = WriteBlock;
+			sourceTree = "<group>";
+		};
 		B0D266B91DEE837600C16964 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 				B04072BC1DEECFB9007A8C74 /* PassValue */,
 				B04072C61DEEFB47007A8C74 /* RefrenceCount */,
 				B04072CA1DEF0786007A8C74 /* DebugSkill */,
+				B04072D21DEF1669007A8C74 /* WriteBlock */,
 			);
 			name = Cluster;
 			sourceTree = "<group>";
@@ -357,6 +370,7 @@
 				B0D266C71DEE837600C16964 /* main.m in Sources */,
 				B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */,
 				B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */,
+				B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
