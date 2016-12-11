@@ -13,6 +13,8 @@
 		B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072C81DEEFB77007A8C74 /* ReferenceCountController.m */; };
 		B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072CC1DEF07A5007A8C74 /* DebugSkillController.m */; };
 		B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D41DEF168E007A8C74 /* WriteBlockController.m */; };
+		B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D81DEF1FCA007A8C74 /* AnimationController.m */; };
+		B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */; };
 		B0D266C71DEE837600C16964 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C61DEE837600C16964 /* main.m */; };
 		B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C91DEE837600C16964 /* AppDelegate.m */; };
 		B0D266D01DEE837600C16964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D266CE1DEE837600C16964 /* Main.storyboard */; };
@@ -41,6 +43,10 @@
 		B04072D11DEF0944007A8C74 /* LogDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LogDefine.h; path = Defines/LogDefine.h; sourceTree = "<group>"; };
 		B04072D31DEF168E007A8C74 /* WriteBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteBlockController.h; path = Cluster/WriteBlockController.h; sourceTree = "<group>"; };
 		B04072D41DEF168E007A8C74 /* WriteBlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WriteBlockController.m; path = Cluster/WriteBlockController.m; sourceTree = "<group>"; };
+		B04072D71DEF1FCA007A8C74 /* AnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationController.h; path = Cluster/AnimationController.h; sourceTree = "<group>"; };
+		B04072D81DEF1FCA007A8C74 /* AnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationController.m; path = Cluster/AnimationController.m; sourceTree = "<group>"; };
+		B079400E1DFD1F4500654018 /* ProtocalWithProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocalWithProperty.h; path = Cluster/ProtocalWithProperty.h; sourceTree = "<group>"; };
+		B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProtocalWithProperty.m; path = Cluster/ProtocalWithProperty.m; sourceTree = "<group>"; };
 		B0D266C21DEE837600C16964 /* ExperienceCluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExperienceCluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D266C61DEE837600C16964 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0D266C81DEE837600C16964 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +153,24 @@
 			name = WriteBlock;
 			sourceTree = "<group>";
 		};
+		B04072D61DEF1FAB007A8C74 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B04072D71DEF1FCA007A8C74 /* AnimationController.h */,
+				B04072D81DEF1FCA007A8C74 /* AnimationController.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		B079400D1DFD1F0B00654018 /* ProtocalProperty */ = {
+			isa = PBXGroup;
+			children = (
+				B079400E1DFD1F4500654018 /* ProtocalWithProperty.h */,
+				B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */,
+			);
+			name = ProtocalProperty;
+			sourceTree = "<group>";
+		};
 		B0D266B91DEE837600C16964 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +224,8 @@
 				B04072C61DEEFB47007A8C74 /* RefrenceCount */,
 				B04072CA1DEF0786007A8C74 /* DebugSkill */,
 				B04072D21DEF1669007A8C74 /* WriteBlock */,
+				B04072D61DEF1FAB007A8C74 /* Animation */,
+				B079400D1DFD1F0B00654018 /* ProtocalProperty */,
 			);
 			name = Cluster;
 			sourceTree = "<group>";
@@ -363,6 +389,7 @@
 				B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */,
 				B0D266EB1DEEA9B500C16964 /* UIView+Dot.m in Sources */,
 				B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */,
+				B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */,
 				B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */,
 				B0D266DE1DEE865E00C16964 /* RootViewController.m in Sources */,
 				B04072C21DEED88B007A8C74 /* UILabel+Category.m in Sources */,
@@ -371,6 +398,7 @@
 				B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */,
 				B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */,
 				B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */,
+				B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

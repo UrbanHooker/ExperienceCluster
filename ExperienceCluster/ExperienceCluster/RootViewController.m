@@ -33,6 +33,8 @@ static NSString * const cellID = @"reusedCellID";
     [self addCell:@"ReferenceCount" class:@"ReferenceCountController"];
     [self addCell:@"DebugSkill" class:@"DebugSkillController"];
     [self addCell:@"WriteBlock" class:@"WriteBlockController"];
+    [self addCell:@"Animation" class:@"AnimationController"];
+    [self addCell:@"ProtocalWithProperty" class:@"ProtocalWithProperty"];
     
 }
 
