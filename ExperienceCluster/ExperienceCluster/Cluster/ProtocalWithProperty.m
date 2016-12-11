@@ -21,7 +21,9 @@
     
     self.manager = self;
     
-    [self sayHello];
+    if ([self respondsToSelector:@selector(sayHello)]) {
+        [self sayHello];
+    }
 }
 
 - (void)sayHello {
