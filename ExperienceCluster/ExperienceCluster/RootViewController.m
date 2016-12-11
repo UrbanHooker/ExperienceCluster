@@ -35,6 +35,8 @@ static NSString * const cellID = @"reusedCellID";
     [self addCell:@"WriteBlock" class:@"WriteBlockController"];
     [self addCell:@"Animation" class:@"AnimationController"];
     [self addCell:@"ProtocalWithProperty" class:@"ProtocalWithProperty"];
+    [self addCell:@"Layers" class:@"LayerController"];
+
     
 }
 

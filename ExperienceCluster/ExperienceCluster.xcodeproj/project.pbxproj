@@ -15,6 +15,8 @@
 		B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D41DEF168E007A8C74 /* WriteBlockController.m */; };
 		B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D81DEF1FCA007A8C74 /* AnimationController.m */; };
 		B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */; };
+		B07940141DFD228F00654018 /* LayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07940131DFD228F00654018 /* LayerController.m */; };
+		B07940171DFD2FB100654018 /* UIImage+RYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B07940161DFD2FB100654018 /* UIImage+RYCategory.m */; };
 		B0D266C71DEE837600C16964 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C61DEE837600C16964 /* main.m */; };
 		B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D266C91DEE837600C16964 /* AppDelegate.m */; };
 		B0D266D01DEE837600C16964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D266CE1DEE837600C16964 /* Main.storyboard */; };
@@ -47,6 +49,10 @@
 		B04072D81DEF1FCA007A8C74 /* AnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationController.m; path = Cluster/AnimationController.m; sourceTree = "<group>"; };
 		B079400E1DFD1F4500654018 /* ProtocalWithProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocalWithProperty.h; path = Cluster/ProtocalWithProperty.h; sourceTree = "<group>"; };
 		B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProtocalWithProperty.m; path = Cluster/ProtocalWithProperty.m; sourceTree = "<group>"; };
+		B07940121DFD228F00654018 /* LayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerController.h; path = Cluster/LayerController.h; sourceTree = "<group>"; };
+		B07940131DFD228F00654018 /* LayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerController.m; path = Cluster/LayerController.m; sourceTree = "<group>"; };
+		B07940151DFD2FB100654018 /* UIImage+RYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RYCategory.h"; path = "Category/UIImage+RYCategory.h"; sourceTree = "<group>"; };
+		B07940161DFD2FB100654018 /* UIImage+RYCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RYCategory.m"; path = "Category/UIImage+RYCategory.m"; sourceTree = "<group>"; };
 		B0D266C21DEE837600C16964 /* ExperienceCluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExperienceCluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D266C61DEE837600C16964 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0D266C81DEE837600C16964 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +177,15 @@
 			name = ProtocalProperty;
 			sourceTree = "<group>";
 		};
+		B07940111DFD227800654018 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B07940121DFD228F00654018 /* LayerController.h */,
+				B07940131DFD228F00654018 /* LayerController.m */,
+			);
+			name = Layer;
+			sourceTree = "<group>";
+		};
 		B0D266B91DEE837600C16964 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +241,7 @@
 				B04072D21DEF1669007A8C74 /* WriteBlock */,
 				B04072D61DEF1FAB007A8C74 /* Animation */,
 				B079400D1DFD1F0B00654018 /* ProtocalProperty */,
+				B07940111DFD227800654018 /* Layer */,
 			);
 			name = Cluster;
 			sourceTree = "<group>";
@@ -259,6 +275,8 @@
 				B04072C11DEED88B007A8C74 /* UILabel+Category.m */,
 				B04072C31DEEDA07007A8C74 /* UIButton+Category.h */,
 				B04072C41DEEDA07007A8C74 /* UIButton+Category.m */,
+				B07940151DFD2FB100654018 /* UIImage+RYCategory.h */,
+				B07940161DFD2FB100654018 /* UIImage+RYCategory.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -389,6 +407,7 @@
 				B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */,
 				B0D266EB1DEEA9B500C16964 /* UIView+Dot.m in Sources */,
 				B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */,
+				B07940171DFD2FB100654018 /* UIImage+RYCategory.m in Sources */,
 				B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */,
 				B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */,
 				B0D266DE1DEE865E00C16964 /* RootViewController.m in Sources */,
@@ -398,6 +417,7 @@
 				B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */,
 				B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */,
 				B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */,
+				B07940141DFD228F00654018 /* LayerController.m in Sources */,
 				B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
