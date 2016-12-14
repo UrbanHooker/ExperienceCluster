@@ -14,6 +14,9 @@
 		B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072CC1DEF07A5007A8C74 /* DebugSkillController.m */; };
 		B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D41DEF168E007A8C74 /* WriteBlockController.m */; };
 		B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D81DEF1FCA007A8C74 /* AnimationController.m */; };
+		B04DF9431E00F5FE00C41AED /* CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF9421E00F5FE00C41AED /* CoreText.m */; };
+		B04DF9461E00F79C00C41AED /* CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF9451E00F79C00C41AED /* CoreGraphics.m */; };
+		B04DF94B1E01210300C41AED /* CGPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF94A1E01210300C41AED /* CGPath.m */; };
 		B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */; };
 		B07940141DFD228F00654018 /* LayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07940131DFD228F00654018 /* LayerController.m */; };
 		B07940171DFD2FB100654018 /* UIImage+RYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B07940161DFD2FB100654018 /* UIImage+RYCategory.m */; };
@@ -47,6 +50,12 @@
 		B04072D41DEF168E007A8C74 /* WriteBlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WriteBlockController.m; path = Cluster/WriteBlockController.m; sourceTree = "<group>"; };
 		B04072D71DEF1FCA007A8C74 /* AnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationController.h; path = Cluster/AnimationController.h; sourceTree = "<group>"; };
 		B04072D81DEF1FCA007A8C74 /* AnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationController.m; path = Cluster/AnimationController.m; sourceTree = "<group>"; };
+		B04DF9411E00F5FE00C41AED /* CoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreText.h; path = Cluster/CoreText.h; sourceTree = "<group>"; };
+		B04DF9421E00F5FE00C41AED /* CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreText.m; path = Cluster/CoreText.m; sourceTree = "<group>"; };
+		B04DF9441E00F79C00C41AED /* CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreGraphics.h; path = Cluster/CoreGraphics.h; sourceTree = "<group>"; };
+		B04DF9451E00F79C00C41AED /* CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreGraphics.m; path = Cluster/CoreGraphics.m; sourceTree = "<group>"; };
+		B04DF9491E01210300C41AED /* CGPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPath.h; path = Cluster/CGPath.h; sourceTree = "<group>"; };
+		B04DF94A1E01210300C41AED /* CGPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGPath.m; path = Cluster/CGPath.m; sourceTree = "<group>"; };
 		B079400E1DFD1F4500654018 /* ProtocalWithProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocalWithProperty.h; path = Cluster/ProtocalWithProperty.h; sourceTree = "<group>"; };
 		B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProtocalWithProperty.m; path = Cluster/ProtocalWithProperty.m; sourceTree = "<group>"; };
 		B07940121DFD228F00654018 /* LayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerController.h; path = Cluster/LayerController.h; sourceTree = "<group>"; };
@@ -168,6 +177,34 @@
 			name = Animation;
 			sourceTree = "<group>";
 		};
+		B04DF9401E00F5D400C41AED /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				B04DF9411E00F5FE00C41AED /* CoreText.h */,
+				B04DF9421E00F5FE00C41AED /* CoreText.m */,
+			);
+			name = CoreText;
+			sourceTree = "<group>";
+		};
+		B04DF9471E00F79F00C41AED /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				B04DF9441E00F79C00C41AED /* CoreGraphics.h */,
+				B04DF9451E00F79C00C41AED /* CoreGraphics.m */,
+				B04DF9481E0120EC00C41AED /* CGPath */,
+			);
+			name = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		B04DF9481E0120EC00C41AED /* CGPath */ = {
+			isa = PBXGroup;
+			children = (
+				B04DF9491E01210300C41AED /* CGPath.h */,
+				B04DF94A1E01210300C41AED /* CGPath.m */,
+			);
+			name = CGPath;
+			sourceTree = "<group>";
+		};
 		B079400D1DFD1F0B00654018 /* ProtocalProperty */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +279,8 @@
 				B04072D61DEF1FAB007A8C74 /* Animation */,
 				B079400D1DFD1F0B00654018 /* ProtocalProperty */,
 				B07940111DFD227800654018 /* Layer */,
+				B04DF9471E00F79F00C41AED /* CoreGraphics */,
+				B04DF9401E00F5D400C41AED /* CoreText */,
 			);
 			name = Cluster;
 			sourceTree = "<group>";
@@ -406,6 +445,7 @@
 				B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */,
 				B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */,
 				B0D266EB1DEEA9B500C16964 /* UIView+Dot.m in Sources */,
+				B04DF9461E00F79C00C41AED /* CoreGraphics.m in Sources */,
 				B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */,
 				B07940171DFD2FB100654018 /* UIImage+RYCategory.m in Sources */,
 				B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */,
@@ -417,7 +457,9 @@
 				B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */,
 				B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */,
 				B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */,
+				B04DF9431E00F5FE00C41AED /* CoreText.m in Sources */,
 				B07940141DFD228F00654018 /* LayerController.m in Sources */,
+				B04DF94B1E01210300C41AED /* CGPath.m in Sources */,
 				B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

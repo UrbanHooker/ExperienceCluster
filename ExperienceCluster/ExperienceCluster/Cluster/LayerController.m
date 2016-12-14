@@ -15,6 +15,7 @@
 @property (nonatomic, strong) CAGradientLayer   *gradientLayer;
 @property (nonatomic, strong) CAEmitterLayer    *emitterLayer;
 @property (nonatomic, strong) CAReplicatorLayer *replicatorLayer;
+@property (nonatomic, strong) CATextLayer       *textLayer;
 
 @end
 
@@ -131,6 +132,18 @@
         
     }
     return _replicatorLayer;
+}
+
+- (CATextLayer *)textLayer {
+	if(_textLayer == nil) {
+		_textLayer = [CATextLayer layer];
+        
+        _textLayer.frame = CGRectMake(500, 200, 200, 200);
+        
+        _textLayer.string = @"Hello buddy";
+        
+	}
+	return _textLayer;
 }
 
 @end

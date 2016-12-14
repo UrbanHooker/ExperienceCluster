@@ -1,19 +1,20 @@
 //
-//  RootViewController.m
+//  CoreGraphics.m
+//  ExperienceCluster
 //
-//  Created by Roy Miller on 16/11/30.
+//  Created by Roy Miller on 16/12/14.
 //  Copyright © 2016年 Roy Miller. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "CoreGraphics.h"
 
-@interface RootViewController ()
+@interface CoreGraphics () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSMutableArray *classNames;
+@property (nonatomic, strong) UITableView    *tableView;
 @end
 
-@implementation RootViewController
-
+@implementation CoreGraphics
 static NSString * const cellID = @"reusedCellID";
 
 #pragma mark - LifeCycle & Init
@@ -25,23 +26,14 @@ static NSString * const cellID = @"reusedCellID";
     
     [self cellList];
     
+    [self.view addSubview:self.tableView];
     [self.tableView reloadData];
 }
 - (void)cellList {
-    [self addCell:@"BuildInterface" class:@"BuildInterfaceController"];
-    [self addCell:@"PassValue" class:@"PassValueController"];
-    [self addCell:@"ReferenceCount" class:@"ReferenceCountController"];
-    [self addCell:@"DebugSkill" class:@"DebugSkillController"];
-    [self addCell:@"WriteBlock" class:@"WriteBlockController"];
-    [self addCell:@"Animation" class:@"AnimationController"];
-    [self addCell:@"ProtocalWithProperty" class:@"ProtocalWithProperty"];
-    [self addCell:@"Layers" class:@"LayerController"];
-    [self addCell:@"CoreGraphics" class:@"CoreGraphics"];
-    [self addCell:@"CoreText" class:@"CoreText"];
+    [self addCell:@"CGPath" class:@"CGPath"];
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _titles.count;
 }
@@ -51,7 +43,7 @@ static NSString * const cellID = @"reusedCellID";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%03ld - %@",indexPath.row+1,_titles[indexPath.row]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%02ld - %@",indexPath.row+1,_titles[indexPath.row]];
     return cell;
 }
 
@@ -66,10 +58,28 @@ static NSString * const cellID = @"reusedCellID";
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - Getters & Setters
+- (UITableView *)tableView {
+    if(_tableView == nil) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        
+        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.contentInset    = UIEdgeInsetsMake(0, 0, 0, 0);
+        _tableView.separatorStyle  = UITableViewCellSeparatorStyleSingleLine;
+        _tableView.delegate        = self;
+        _tableView.dataSource      = self;
+        
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+        
+    }
+    return _tableView;
+}
+
 #pragma mark - Helper
 - (void)addCell:(NSString *)title class:(NSString *)className {
     [self.titles addObject:title];
     [self.classNames addObject:className];
 }
+
 
 @end
