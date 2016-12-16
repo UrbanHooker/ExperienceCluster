@@ -16,7 +16,15 @@
 		B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04072D81DEF1FCA007A8C74 /* AnimationController.m */; };
 		B04DF9431E00F5FE00C41AED /* CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF9421E00F5FE00C41AED /* CoreText.m */; };
 		B04DF9461E00F79C00C41AED /* CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF9451E00F79C00C41AED /* CoreGraphics.m */; };
-		B04DF94B1E01210300C41AED /* CGPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF94A1E01210300C41AED /* CGPath.m */; };
+		B04DF94B1E01210300C41AED /* CGBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF94A1E01210300C41AED /* CGBase.m */; };
+		B04DF94E1E01233200C41AED /* CGPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B04DF94D1E01233200C41AED /* CGPath.m */; };
+		B06A2DD41E03C42E003E127D /* CGColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A2DD31E03C42E003E127D /* CGColorSpace.m */; };
+		B06A2DD71E03D42B003E127D /* CGShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A2DD61E03D42B003E127D /* CGShadow.m */; };
+		B06A2DDA1E03E2E5003E127D /* CGGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A2DD91E03E2E5003E127D /* CGGradient.m */; };
+		B06A2DDD1E03F741003E127D /* TransparencyLayers.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A2DDC1E03F741003E127D /* TransparencyLayers.m */; };
+		B06A2DE01E0417C5003E127D /* CGLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A2DDF1E0417C5003E127D /* CGLayer.m */; };
+		B06A2DE21E041CE0003E127D /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B06A2DE11E041CE0003E127D /* test.pdf */; };
+		B06A2DE51E041FBF003E127D /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A2DE41E041FBF003E127D /* CGPDFDocument.m */; };
 		B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */; };
 		B07940141DFD228F00654018 /* LayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07940131DFD228F00654018 /* LayerController.m */; };
 		B07940171DFD2FB100654018 /* UIImage+RYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B07940161DFD2FB100654018 /* UIImage+RYCategory.m */; };
@@ -54,8 +62,23 @@
 		B04DF9421E00F5FE00C41AED /* CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreText.m; path = Cluster/CoreText.m; sourceTree = "<group>"; };
 		B04DF9441E00F79C00C41AED /* CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreGraphics.h; path = Cluster/CoreGraphics.h; sourceTree = "<group>"; };
 		B04DF9451E00F79C00C41AED /* CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreGraphics.m; path = Cluster/CoreGraphics.m; sourceTree = "<group>"; };
-		B04DF9491E01210300C41AED /* CGPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPath.h; path = Cluster/CGPath.h; sourceTree = "<group>"; };
-		B04DF94A1E01210300C41AED /* CGPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGPath.m; path = Cluster/CGPath.m; sourceTree = "<group>"; };
+		B04DF9491E01210300C41AED /* CGBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGBase.h; path = Cluster/CGBase.h; sourceTree = "<group>"; };
+		B04DF94A1E01210300C41AED /* CGBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGBase.m; path = Cluster/CGBase.m; sourceTree = "<group>"; };
+		B04DF94C1E01233200C41AED /* CGPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPath.h; path = Cluster/CG/CGPath.h; sourceTree = "<group>"; };
+		B04DF94D1E01233200C41AED /* CGPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGPath.m; path = Cluster/CG/CGPath.m; sourceTree = "<group>"; };
+		B06A2DD21E03C42E003E127D /* CGColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGColorSpace.h; path = Cluster/CG/CGColorSpace.h; sourceTree = "<group>"; };
+		B06A2DD31E03C42E003E127D /* CGColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGColorSpace.m; path = Cluster/CG/CGColorSpace.m; sourceTree = "<group>"; };
+		B06A2DD51E03D42B003E127D /* CGShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGShadow.h; path = Cluster/CG/CGShadow.h; sourceTree = "<group>"; };
+		B06A2DD61E03D42B003E127D /* CGShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGShadow.m; path = Cluster/CG/CGShadow.m; sourceTree = "<group>"; };
+		B06A2DD81E03E2E5003E127D /* CGGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGGradient.h; path = Cluster/CG/CGGradient.h; sourceTree = "<group>"; };
+		B06A2DD91E03E2E5003E127D /* CGGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGGradient.m; path = Cluster/CG/CGGradient.m; sourceTree = "<group>"; };
+		B06A2DDB1E03F741003E127D /* TransparencyLayers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransparencyLayers.h; path = Cluster/CG/TransparencyLayers.h; sourceTree = "<group>"; };
+		B06A2DDC1E03F741003E127D /* TransparencyLayers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransparencyLayers.m; path = Cluster/CG/TransparencyLayers.m; sourceTree = "<group>"; };
+		B06A2DDE1E0417C5003E127D /* CGLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGLayer.h; path = Cluster/CG/CGLayer.h; sourceTree = "<group>"; };
+		B06A2DDF1E0417C5003E127D /* CGLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGLayer.m; path = Cluster/CG/CGLayer.m; sourceTree = "<group>"; };
+		B06A2DE11E041CE0003E127D /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		B06A2DE31E041FBF003E127D /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = Cluster/CG/CGPDFDocument.h; sourceTree = "<group>"; };
+		B06A2DE41E041FBF003E127D /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGPDFDocument.m; path = Cluster/CG/CGPDFDocument.m; sourceTree = "<group>"; };
 		B079400E1DFD1F4500654018 /* ProtocalWithProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocalWithProperty.h; path = Cluster/ProtocalWithProperty.h; sourceTree = "<group>"; };
 		B079400F1DFD1F4500654018 /* ProtocalWithProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProtocalWithProperty.m; path = Cluster/ProtocalWithProperty.m; sourceTree = "<group>"; };
 		B07940121DFD228F00654018 /* LayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerController.h; path = Cluster/LayerController.h; sourceTree = "<group>"; };
@@ -191,18 +214,32 @@
 			children = (
 				B04DF9441E00F79C00C41AED /* CoreGraphics.h */,
 				B04DF9451E00F79C00C41AED /* CoreGraphics.m */,
-				B04DF9481E0120EC00C41AED /* CGPath */,
+				B04DF9481E0120EC00C41AED /* CGComponents */,
 			);
 			name = CoreGraphics;
 			sourceTree = "<group>";
 		};
-		B04DF9481E0120EC00C41AED /* CGPath */ = {
+		B04DF9481E0120EC00C41AED /* CGComponents */ = {
 			isa = PBXGroup;
 			children = (
-				B04DF9491E01210300C41AED /* CGPath.h */,
-				B04DF94A1E01210300C41AED /* CGPath.m */,
+				B04DF9491E01210300C41AED /* CGBase.h */,
+				B04DF94A1E01210300C41AED /* CGBase.m */,
+				B04DF94C1E01233200C41AED /* CGPath.h */,
+				B04DF94D1E01233200C41AED /* CGPath.m */,
+				B06A2DD21E03C42E003E127D /* CGColorSpace.h */,
+				B06A2DD31E03C42E003E127D /* CGColorSpace.m */,
+				B06A2DD51E03D42B003E127D /* CGShadow.h */,
+				B06A2DD61E03D42B003E127D /* CGShadow.m */,
+				B06A2DD81E03E2E5003E127D /* CGGradient.h */,
+				B06A2DD91E03E2E5003E127D /* CGGradient.m */,
+				B06A2DDB1E03F741003E127D /* TransparencyLayers.h */,
+				B06A2DDC1E03F741003E127D /* TransparencyLayers.m */,
+				B06A2DDE1E0417C5003E127D /* CGLayer.h */,
+				B06A2DDF1E0417C5003E127D /* CGLayer.m */,
+				B06A2DE31E041FBF003E127D /* CGPDFDocument.h */,
+				B06A2DE41E041FBF003E127D /* CGPDFDocument.m */,
 			);
-			name = CGPath;
+			name = CGComponents;
 			sourceTree = "<group>";
 		};
 		B079400D1DFD1F0B00654018 /* ProtocalProperty */ = {
@@ -288,6 +325,7 @@
 		B0D266E01DEE870C00C16964 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				B06A2DE11E041CE0003E127D /* test.pdf */,
 				B0D266D11DEE837600C16964 /* Assets.xcassets */,
 				B0D266CE1DEE837600C16964 /* Main.storyboard */,
 				B0D266D31DEE837600C16964 /* LaunchScreen.storyboard */,
@@ -384,6 +422,7 @@
 				B0D266D51DEE837600C16964 /* LaunchScreen.storyboard in Resources */,
 				B0D266D21DEE837600C16964 /* Assets.xcassets in Resources */,
 				B0D266D01DEE837600C16964 /* Main.storyboard in Resources */,
+				B06A2DE21E041CE0003E127D /* test.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,23 +482,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D266CA1DEE837600C16964 /* AppDelegate.m in Sources */,
+				B06A2DDD1E03F741003E127D /* TransparencyLayers.m in Sources */,
 				B0D266E81DEE962200C16964 /* BaseViewController.m in Sources */,
 				B0D266EB1DEEA9B500C16964 /* UIView+Dot.m in Sources */,
 				B04DF9461E00F79C00C41AED /* CoreGraphics.m in Sources */,
 				B04072C91DEEFB77007A8C74 /* ReferenceCountController.m in Sources */,
+				B06A2DDA1E03E2E5003E127D /* CGGradient.m in Sources */,
 				B07940171DFD2FB100654018 /* UIImage+RYCategory.m in Sources */,
 				B07940101DFD1F4500654018 /* ProtocalWithProperty.m in Sources */,
+				B06A2DD41E03C42E003E127D /* CGColorSpace.m in Sources */,
 				B04072C51DEEDA07007A8C74 /* UIButton+Category.m in Sources */,
 				B0D266DE1DEE865E00C16964 /* RootViewController.m in Sources */,
 				B04072C21DEED88B007A8C74 /* UILabel+Category.m in Sources */,
+				B06A2DE51E041FBF003E127D /* CGPDFDocument.m in Sources */,
+				B06A2DD71E03D42B003E127D /* CGShadow.m in Sources */,
 				B0D266E51DEE87F600C16964 /* BuildInterfaceController.m in Sources */,
 				B0D266C71DEE837600C16964 /* main.m in Sources */,
 				B04072BF1DEECFDA007A8C74 /* PassValueController.m in Sources */,
+				B04DF94E1E01233200C41AED /* CGPath.m in Sources */,
 				B04072CD1DEF07A5007A8C74 /* DebugSkillController.m in Sources */,
+				B06A2DE01E0417C5003E127D /* CGLayer.m in Sources */,
 				B04072D51DEF168E007A8C74 /* WriteBlockController.m in Sources */,
 				B04DF9431E00F5FE00C41AED /* CoreText.m in Sources */,
 				B07940141DFD228F00654018 /* LayerController.m in Sources */,
-				B04DF94B1E01210300C41AED /* CGPath.m in Sources */,
+				B04DF94B1E01210300C41AED /* CGBase.m in Sources */,
 				B04072D91DEF1FCA007A8C74 /* AnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

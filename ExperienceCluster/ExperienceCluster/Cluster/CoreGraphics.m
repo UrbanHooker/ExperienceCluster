@@ -9,8 +9,7 @@
 #import "CoreGraphics.h"
 
 @interface CoreGraphics () <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) NSMutableArray *titles;
-@property (nonatomic, strong) NSMutableArray *classNames;
+@property (nonatomic, strong) NSMutableArray *cells;
 @property (nonatomic, strong) UITableView    *tableView;
 @end
 
@@ -20,9 +19,8 @@ static NSString * const cellID = @"reusedCellID";
 #pragma mark - LifeCycle & Init
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title      = @"Experience Cluster";
-    self.titles     = @[].mutableCopy;
-    self.classNames = @[].mutableCopy;
+    self.title      = @"CoreGraphics";
+    self.cells     = @[].mutableCopy;
     
     [self cellList];
     
@@ -30,12 +28,18 @@ static NSString * const cellID = @"reusedCellID";
     [self.tableView reloadData];
 }
 - (void)cellList {
-    [self addCell:@"CGPath" class:@"CGPath"];
+    [self addCell:@"CGPath"];
+    [self addCell:@"CGColorSpace"];
+    [self addCell:@"CGShadow"];
+    [self addCell:@"CGGradient"];
+    [self addCell:@"TransparencyLayers"];
+    [self addCell:@"CGLayer"];
+    [self addCell:@"CGPDFDocument"];
 }
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _titles.count;
+    return _cells.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -43,16 +47,16 @@ static NSString * const cellID = @"reusedCellID";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%02ld - %@",indexPath.row+1,_titles[indexPath.row]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%02ld - %@",indexPath.row+1,_cells[indexPath.row]];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *className = self.classNames[indexPath.row];
+    NSString *className = @"CGBase";
     Class class         = NSClassFromString(className);
     if (class) {
         UIViewController *ctrl = class.new;
-        ctrl.title             = _titles[indexPath.row];
+        ctrl.title   = _cells[indexPath.row];
         [self.navigationController pushViewController:ctrl animated:YES];
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -76,9 +80,8 @@ static NSString * const cellID = @"reusedCellID";
 }
 
 #pragma mark - Helper
-- (void)addCell:(NSString *)title class:(NSString *)className {
-    [self.titles addObject:title];
-    [self.classNames addObject:className];
+- (void)addCell:(NSString *)cell{
+    [self.cells addObject:cell];
 }
 
 

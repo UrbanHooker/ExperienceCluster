@@ -1,13 +1,12 @@
 //
-//  CGPath.m
+//  CGPath.h
 //  ExperienceCluster
 //
 //  Created by Roy Miller on 16/12/14.
 //  Copyright © 2016年 Roy Miller. All rights reserved.
 //
 
-#import "CGPath.h"
+#import "BaseViewController.h"
 
-@implementation CGPath
-
+@interface CGBase : BaseViewController
 @end
